@@ -1,6 +1,6 @@
 # Arch Linux Starter
 1. `nano /etc/pacman.d/mirrorlist`
-    * Change Thanland mirror to first line for fastest.
+    * Change Thailand mirror to first line for fastest.
     * Ctrl+K to cut, Ctrl+U to paste
 2. `archinstall`
 3. reboot
