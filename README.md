@@ -1,4 +1,4 @@
-# Arch Linux Starter
+# Arch Linux Installer
 1. `nano /etc/pacman.d/mirrorlist`
     * Change Thailand mirror to first line for fastest.
     * Ctrl+K to cut, Ctrl+U to paste
@@ -8,12 +8,17 @@
 5. `sudo systemctl enable gdm.service`
 6. reboot
 
-## After login GNOME
-1. `sudo pacman -S nano`
+# After login GNOME
+1. `sudo pacman -Syu nano git base-devel`
+    * git, base-devel are optional
 2. `sudo nano /etc/pacman.conf`
     * Uncomment [multilib] block for enable more software
 3. `sudo pacman -Syu`
-4. `sudo pacman -S --needed git base-devel`
-5. `git clone https://aur.archlinux.org/yay.git`
-6. `cd yay && makepkg -si`
-7. `yay -S pamac-aur`
+4. You can using more package.
+
+
+### Add/Remove UI (Optional)
+2. `git clone https://aur.archlinux.org/yay.git`
+3. `cd yay && makepkg -si`
+4. `yay -S pamac-aur`
+5. You can using AUR package.
